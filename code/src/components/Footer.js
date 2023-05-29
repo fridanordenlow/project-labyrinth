@@ -5,17 +5,20 @@ export const Footer = () => {
   return (
     <FooterSection>
       <FooterText>Designed by students @ Technigo Bootcamp 2023</FooterText>
-      <Links>
-        <StyledA href="https://www.linkedin.com/in/emiliasaberski/">Emilia
-          <i className="fa-brands fa-linkedin-in" />
-        </StyledA>
-        <StyledA href="https://www.linkedin.com/in/fridanordenlow/">Frida
-          <i className="fa-brands fa-linkedin-in" />
-        </StyledA>
-        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/">Andrea
-          <i className="fa-brands fa-linkedin-in" />
-        </StyledA>
-      </Links>
+      <LinkWrapper>
+        <StyledLink href="https://www.linkedin.com/in/emiliasaberski/">
+          Emilia
+          <Icon className="fa-brands fa-linkedin-in" />
+        </StyledLink>
+        <StyledLink href="https://www.linkedin.com/in/fridanordenlow/">
+          Frida
+          <Icon className="fa-brands fa-linkedin-in" />
+        </StyledLink>
+        <StyledLink href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/">
+          Andrea
+          <Icon className="fa-brands fa-linkedin-in" />
+        </StyledLink>
+      </LinkWrapper>
     </FooterSection>
   )
 }
@@ -32,19 +35,20 @@ const FooterSection = styled.div`
   bottom: 0;
   left: 0;
   margin-bottom: 10px;
-  height: 2.5rem;
+  height: 3.5rem;
 `
 const FooterText = styled.div`
-font-size: 14px;
+font-size: 16px;
 color: grey;
 margin-bottom: -20px;
 text-align: center;
 `
 
-const StyledA = styled.a`
+const StyledLink = styled.a`
   text-decoration: none;
+  font-size: 16px;
   display: flex;
-  flex-direction: column;
+  gap: 10px;
   align-items: center;
   margin-right: 20px;
   color: grey;
@@ -52,7 +56,10 @@ const StyledA = styled.a`
     color: white;
   }
 `
-const Links = styled.div`
+const LinkWrapper = styled.div`
 display: flex;
-flex-direction: row;
+`
+
+const Icon = styled.span`
+  font-size: 18px;
 `
