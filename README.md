@@ -8,4 +8,4 @@ Since this week was a group project, we started by planning on how and when we c
 
 ## View it live
 
-https://reliable-sorbet-d720d3.netlify.app/?
+https://reliable-sorbet-d720d3.netlify.app/
